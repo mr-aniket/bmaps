@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html style="height:100%;margin:0;padding:0;">
-<title>Leaflet page with tiles from localhost</title>
+<title>Maps by Bucorel</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="./leaflet/leaflet.css" />
 <script src="./leaflet/leaflet.js"></script>
@@ -16,8 +16,8 @@
 //var map = L.map('map').setView([40.36629, 49.83335], 18);
 var map = L.map('map').setView([0, 0], 0);
 
-L.tileLayer('http://127.0.0.1/hot/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">Business Computing Research Laboratory</a> contributors',
+L.tileLayer('http://test.bucorel.com/hot/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://test.bucorel.com/">Business Computing Research Laboratory</a> contributors',
     maxZoom: 21,
     maxNativeZoom: 20
 }).addTo(map);
